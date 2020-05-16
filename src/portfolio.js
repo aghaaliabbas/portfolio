@@ -17,11 +17,12 @@ const greeting = {
 
 const socialMediaLinks = {
 
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7"
+  github: "https://github.com/aghaaliabbas",
+  linkedin: "https://www.linkedin.com/in/agha-ali-abbas/",
+  gmail: "aghaali.abbas@outlook.com",
+  gitlab: "https://gitlab.com/formanite66",
+  facebook: "https://www.facebook.com/aghaali.abbas.5",
+  skype: 'live:agha.ali_1'
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -29,17 +30,24 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "PASSIONATE FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
     emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji("⚡ Develop scaleable and clean api's"),
+    emoji("⚡ Desing scaleable database"),
+    emoji("⚡ Integration of third party services such as Firebase/ AWS"),
+    emoji("⚡ Full command in deploying apps on both stores (Appstore & Playstore)")
   ],
 
   /* Make Sure You include correct Font Awesome Classname to view your icon
   https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -65,32 +73,32 @@ const skillsSection = {
       fontAwesomeClassname: "fab fa-node"
     },
     {
+      skillName: "firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
       skillName: "swift",
       fontAwesomeClassname: "fab fa-swift"
+    },
+    {
+      skillName: "android",
+      fontAwesomeClassname: "fab fa-android"
+    },
+    {
+      skillName: "appstore",
+      fontAwesomeClassname: "fab fa-app-store-ios"
     },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
+      skillName: "mongoDb",
       fontAwesomeClassname: "fas fa-database"
     },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
     }
   ]
 };
@@ -101,17 +109,41 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
+      Stack: "Angular",  //Insert stack or technology you have experience in
+      progressPercentage: "95%"  //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Reactjs",  //Insert stack or technology you have experience in
+      progressPercentage: "95%"  //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "React Native",  //Insert stack or technology you have experience in
+      progressPercentage: "95%"  //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Ionic",  //Insert stack or technology you have experience in
+      progressPercentage: "95%"  //Insert relative proficiency in percentage
+    },
+    {
+      Stack: "Firebase",  //Insert stack or technology you have experience in
       progressPercentage: "90%"  //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Nodejs",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Mongodb",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "AWS",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
+      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
+      progressPercentage: "95%"  //Insert relative proficiency in percentage
+    },
   ]
 };
 
@@ -119,7 +151,7 @@ const techStack = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: "c8256129224bdea0c9964937ba4a842746791add",
+  githubConvertedToken: "OGMyOGE1NmQ4MGI2MzBiZmUyMjBmNzM1NDJkNGRlNjBkZGE1YWQ0Yg==",
   githubUserName: "aghaaliabbas",
   showGithubProfile: false // Set true or false to show Contact profile using Github, defaults to false 
 };
@@ -232,8 +264,8 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  number: "+92-3334490134",
+  email_address: "aghaali.abbas@outlook.com"
 };
 
 //Twitter Section
