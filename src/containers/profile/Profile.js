@@ -11,17 +11,17 @@ export default function Profile() {
     setrepo(array);
   }
   function getProfileData() {
-    const client=axios.get("https://api.github.com/users/"+openSource.githubUserName)
-      .then(function(response){
-            setProfileFunction(response.data);
-    });
+    const client = axios.get("https://api.github.com/users/" + openSource.githubUserName)
+      .then(function (response) {
+        setProfileFunction(response.data);
+      });
   }
   useEffect(() => {
     getProfileData();
   }, []);
-  if (openSource.showGithubProfile === "true"){
-    return ( <GithubProfileCard prof={prof} key={prof.id} /> );
+  if (openSource.showGithubProfile) {
+    return (<GithubProfileCard prof={prof} key={prof.id} />);
   } else {
-    return(<Contact />);
+    return (<Contact />);
   }
 }

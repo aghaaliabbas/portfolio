@@ -10,7 +10,7 @@ const greeting = {
   username: "Agha Ali Abbas",
   title: "Hi all, I'm Abbas",
   subTitle: emoji("A passionate Full Stack Software Developer 🚀 having an experience of building Web and Hybrid mobile applications with JavaScript / Angular / Nodejs / Ionic / Reactjs / Flutter / React Native and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+  resumeLink: "https://drive.google.com/file/d/19ZnW7UsxJw5IjjJ1yYkuk33_DsbOgr5Q/view?usp=sharing"
 };
 
 // Your Social Media Link
@@ -119,9 +119,9 @@ const techStack = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: "Your Github Converted Token",
-  githubUserName: "Your Github Username",
-  showGithubProfile: "true" // Set true or false to show Contact profile using Github, defaults to false 
+  githubConvertedToken: "c8256129224bdea0c9964937ba4a842746791add",
+  githubUserName: "aghaaliabbas",
+  showGithubProfile: false // Set true or false to show Contact profile using Github, defaults to false 
 };
 
 
