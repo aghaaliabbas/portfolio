@@ -22,7 +22,7 @@ const socialMediaLinks = {
   gmail: "aghaali.abbas@outlook.com",
   gitlab: "https://gitlab.com/formanite66",
   facebook: "https://www.facebook.com/aghaali.abbas.5",
-  skype: 'live:agha.ali_1'
+  skype: 'https://join.skype.com/invite/ouDPpCVhOEHt'
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -153,24 +153,349 @@ To know how to get github key look at readme.md */
 const openSource = {
   githubConvertedToken: "OGMyOGE1NmQ4MGI2MzBiZmUyMjBmNzM1NDJkNGRlNjBkZGE1YWQ0Yg==",
   githubUserName: "aghaaliabbas",
-  showGithubProfile: false // Set true or false to show Contact profile using Github, defaults to false 
+  showGithubProfile: true // Set true or false to show Contact profile using Github, defaults to false 
 };
 
 
 // Some Big Projects You have worked with your company
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects developed by me",
+  subtitle: "These are some of the projects developed by me",
   projects: [
     {
-      image: "https://drive.google.com/uc?id=1exWn9T6j8TsfDDHJnS3VR66eP6RiGAfY",
-      link: "http://saayahealth.com/"
+      name: 'NurseryTab',
+      description: 'A website for a childcare nursery',
+      techStack: [
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "MONGODB",
+          color: '#ffcb2b'
+        },
+        {
+          name: "FIREBASE",
+          color: '#ffcb2b'
+        },
+        {
+          name: "NODEJS",
+          color: '#5466b6'
+        },
+        {
+          name: "AWS-S3",
+          color: '#5466b6'
+        },
+      ],
+      webUrl: 'https://nurserytabdev.firebaseapp.com/',
+      appStoreUrl: null,
+      playStoreUrl: null
     },
     {
-      image: "https://drive.google.com/uc?id=1MXoXcQRK-pH8J82wyjCW4SJk5AxJe7tf",
-      link: "http://nextu.se/"
-    }
+      name: 'Diggedi',
+      description: 'A music memory game (Hybrid Mobile Application)',
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://itunes.apple.com/us/app/diggedi/id1197380390?ls=1&mt=8',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.diggedi.codingpixel'
+    },
+    {
+      name: 'Taper',
+      description: 'An app for Barbers (Hybrid Mobile Application)',
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://itunes.apple.com/us/app/taper/id1228369422?mt=8',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.taper.cp'
+    },
+    {
+      name: 'Chinox Termite',
+      description: "Hybrid Mobile Application as per client's specifications",
+      techStack: [
+        {
+          name: "REACT NATIVE",
+          color: '#478aff'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.squeezetech.termites'
+    },
+    {
+      name: 'Pest Focus Pro',
+      description: "Hybrid Mobile Application as per client's specifications",
+      techStack: [
+        {
+          name: "REACT NATIVE",
+          color: '#478aff'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.squeezetech.pfptermites'
+    },
+    {
+      name: 'Zuptu',
+      description: "A simple app for task management (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: ".Net",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://apps.apple.com/us/app/zuptu/id1513101380?ls=1',
+      playStoreUrl: null
+    },
+    {
+      name: 'Lbj Construction',
+      description: "A simple app for a construction company (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://play.google.com/store/apps/details?id=com.handyman.and',
+      playStoreUrl: 'https://itunes.apple.com/us/app/lbj-handyman/id1223374584?ls=1&mt=8'
+    },
+    {
+      name: 'PFF',
+      description: "A conference app (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://itunes.apple.com/us/app/2018-public-funds-forum/id1388288497?ls=1&mt=8',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.pff.cp'
+    },
+    {
+      name: 'Rhythms',
+      description: "An app for church (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: 'https://itunes.apple.com/us/app/2018-public-funds-forum/id1388288497?ls=1&mt=8',
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.rythm.cp'
+    },
+    {
+      name: 'Zarok',
+      description: "An app for kids (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: 'https://play.google.com/store/apps/details?id=com.zaroken.aaa'
+    },
+    {
+      name: 'Mire Dating',
+      description: "A Dating app with dateables found using locations (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'WBParts',
+      description: "An app for aircraft maintenance (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'Church Notes',
+      description: "An app for church (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'Size App',
+      description: "An app for knowing sizes of family (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "React-native",
+          color: '#478aff'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'Gift App',
+      description: "An app for affiliate marketing (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#478aff'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'Grab Coffee',
+      description: "An app for Coffee shop (Hybrid Mobile Application)",
+      techStack: [
+        {
+          name: "IONIC",
+          color: '#478aff'
+        },
+        {
+          name: "ANGULAR",
+          color: '#c3142d'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
+    {
+      name: 'Discovery',
+      description: "Android Native Application",
+      techStack: [
+        {
+          name: "Java",
+          color: '#478aff'
+        },
+        {
+          name: "PHP (LARAVEL)",
+          color: '#5466b6'
+        },
+      ],
+      appStoreUrl: null,
+      playStoreUrl: null
+    },
   ]
 };
 
