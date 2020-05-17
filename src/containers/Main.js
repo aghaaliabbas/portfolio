@@ -25,8 +25,8 @@ export default class Main extends Component {
         <StackProgress />
         <Projects />
         <StartupProject />
-        <Achievement />
-        {/* <Blogs />
+        {/*<Achievement />
+         <Blogs />
         <Talks />
         <Twitter />
         <Podcast /> */}
