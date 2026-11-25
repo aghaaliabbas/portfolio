@@ -79,7 +79,7 @@ export interface CaseStudy {
   /** One verified outcome line, in the display face */
   result: string;
   tags: string[];
-  tone: "terracotta" | "sage";
+  tone: "primary" | "brass";
   icon: "bot" | "heart-pulse" | "smartphone" | "coins";
 }
 

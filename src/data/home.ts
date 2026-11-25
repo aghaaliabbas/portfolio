@@ -22,7 +22,7 @@ export const caseStudies: CaseStudy[] = [
     body: "For McKinsey & Company: an orchestrator coordinating five specialized agents that generates value creation plans. Built solo, then extended to company profiles and LLM-generated reports.",
     result: "One developer, five agents plus an orchestrator",
     tags: ["Multi-agent", "LLMs", "Orchestration"],
-    tone: "terracotta",
+    tone: "primary",
     icon: "bot",
   },
   {
@@ -32,7 +32,7 @@ export const caseStudies: CaseStudy[] = [
     body: "For Ireland-based health insurer Vhi: the hospital portal in React and Node.js, plus Datadog monitoring that kept internal portals healthy, in a regulated EU environment.",
     result: "Datadog monitoring across Vhi's internal portals",
     tags: ["React", "Node.js", "Datadog"],
-    tone: "sage",
+    tone: "brass",
     icon: "heart-pulse",
   },
   {
@@ -42,7 +42,7 @@ export const caseStudies: CaseStudy[] = [
     body: "For Singapore's Drivelah: React Native and ReactJS apps on a Sharetribe Flex backend, with BLE hardware integration, fleet management and analytics-driven debugging.",
     result: "99% crash-free sessions",
     tags: ["React Native", "Sharetribe Flex", "Amplitude"],
-    tone: "terracotta",
+    tone: "primary",
     icon: "smartphone",
   },
   {
@@ -52,7 +52,7 @@ export const caseStudies: CaseStudy[] = [
     body: "For Spain-based Buybit: an Angular and React front end for a real-time exchange, plus a portal for minting the company's own coin, on Firebase Functions and Firestore.",
     result: "40% faster data access",
     tags: ["Angular", "React", "Firebase"],
-    tone: "sage",
+    tone: "brass",
     icon: "coins",
   },
 ];

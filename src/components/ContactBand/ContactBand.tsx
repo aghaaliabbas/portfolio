@@ -10,7 +10,7 @@ interface ContactBandProps {
   children: ReactNode;
 }
 
-/** Full-bleed terracotta closing band shared by every page. */
+/** Full-bleed navy closing band shared by every page. */
 export function ContactBand({ id, heading, circle = "left", children }: ContactBandProps) {
   return (
     <section id={id} className={styles.band} aria-labelledby={id ? `${id}-heading` : undefined}>

@@ -3,7 +3,11 @@
 }
 
 .inner {
-  position: relative;
+  display: grid;
+  --portrait-size: clamp(240px, 26vw, 330px);
+  grid-template-columns: minmax(0, 1fr) var(--portrait-size);
+  align-items: center;
+  gap: var(--space-6) clamp(32px, 5vw, 80px);
 }
 
 .title {
@@ -27,8 +31,25 @@
   margin-top: var(--space-6);
 }
 
-@media (max-width: 640px) {
+.photo {
+  justify-self: end;
+}
+
+@media (max-width: 900px) {
   .hero {
     padding-top: var(--space-6);
+  }
+
+  .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .inner {
+    --portrait-size: 220px;
+  }
+
+  .photo {
+    justify-self: start;
+    margin-left: var(--space-4);
   }
 }

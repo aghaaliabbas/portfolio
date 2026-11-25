@@ -7,7 +7,7 @@ import styles from "./Section.module.css";
 interface SectionProps {
   id: string;
   eyebrow?: string;
-  eyebrowTone?: "accent" | "sage";
+  eyebrowTone?: "accent" | "brass";
   title?: string;
   description?: string;
   children: ReactNode;

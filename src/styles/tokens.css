@@ -1,44 +1,43 @@
-/* Organic design system — values from the design handoff (styles.css is the source of truth). */
 :root {
-  /* Core palette */
-  --color-bg: #f5ead8;
-  --color-surface: #ebddc5;
-  --color-text: #201e1d;
-  --color-accent: #c67139; /* terracotta — decoration, large display text */
-  --color-accent-2: #7a8a5e; /* sage */
-  --color-divider: color-mix(in srgb, #201e1d 16%, transparent);
-  /* Darker terracotta for anything carrying small text: white on it is 5.05:1 (AA). The design's own #c67139 is 3.6:1. */
-  --color-action: #a85a28;
+  /* Navy & Brass — a quieter, more corporate take on the Organic system. */
+  --color-bg: #ece8df; /* warm stone */
+  --color-surface: #ddd7c9;
+  --color-text: #121a26; /* ink navy */
+  --color-primary: #1f3a5f; /* deep navy: buttons, links, contact band */
+  --color-brass: #a8803a; /* muted brass: highlights, bullets, small accents */
+  --color-divider: color-mix(in srgb, #121a26 16%, transparent);
+  /* Interactive fills. White on #1f3a5f is 11:1. */
+  --color-action: var(--color-primary);
 
-  --color-neutral-100: #f9f4ed;
-  --color-neutral-200: #eee7db;
-  --color-neutral-300: #dcd3c4;
-  --color-neutral-400: #c0b6a5;
-  --color-neutral-500: #a19786;
-  --color-neutral-600: #82796a;
-  --color-neutral-700: #645c50;
-  --color-neutral-800: #474238;
-  --color-neutral-900: #2e2b25;
+  --color-neutral-100: #f3f0ea;
+  --color-neutral-200: #e7e3da;
+  --color-neutral-300: #d3cec2;
+  --color-neutral-400: #b3ad9f;
+  --color-neutral-500: #918b7d;
+  --color-neutral-600: #716c61;
+  --color-neutral-700: #55514a;
+  --color-neutral-800: #3a3833;
+  --color-neutral-900: #25241f;
 
-  --color-accent-100: #fff2eb;
-  --color-accent-200: #ffe1d0;
-  --color-accent-300: #ffc6a5;
-  --color-accent-400: #f6a06b;
-  --color-accent-500: #d67f48;
-  --color-accent-600: #b2622d;
-  --color-accent-700: #8c491a;
-  --color-accent-800: #643312;
-  --color-accent-900: #402310;
+  --color-primary-100: #e9eef5;
+  --color-primary-200: #d0dbe9;
+  --color-primary-300: #a8bcd4;
+  --color-primary-400: #7a96b8;
+  --color-primary-500: #4f72a0;
+  --color-primary-600: #2f527f;
+  --color-primary-700: #1f3a5f;
+  --color-primary-800: #162b47;
+  --color-primary-900: #0e1c30;
 
-  --color-accent-2-100: #f0fae1;
-  --color-accent-2-200: #e1eecc;
-  --color-accent-2-300: #ccdbb2;
-  --color-accent-2-400: #aebf92;
-  --color-accent-2-500: #8fa073;
-  --color-accent-2-600: #728157;
-  --color-accent-2-700: #56633f;
-  --color-accent-2-800: #3d472b;
-  --color-accent-2-900: #272e1b;
+  --color-brass-100: #f6efdf;
+  --color-brass-200: #ebdfc1;
+  --color-brass-300: #dbc596;
+  --color-brass-400: #c7a863;
+  --color-brass-500: #a8803a;
+  --color-brass-600: #8f6d2c;
+  --color-brass-700: #735620;
+  --color-brass-800: #55401a;
+  --color-brass-900: #382a10;
 
   /* Text tones (all ≥ 4.5:1 on --color-bg) */
   --text-strong: var(--color-text);
@@ -75,8 +74,8 @@
   --gutter: clamp(20px, 5vw, 72px);
   --nav-height: 68px;
 
-  --shadow-sm: 0 1px 2px color-mix(in srgb, #2e2b25 14%, transparent);
-  --shadow-md: 0 3px 10px color-mix(in srgb, #2e2b25 16%, transparent);
-  --shadow-lg: 0 12px 32px color-mix(in srgb, #2e2b25 22%, transparent);
+  --shadow-sm: 0 1px 2px color-mix(in srgb, #121a26 14%, transparent);
+  --shadow-md: 0 3px 10px color-mix(in srgb, #121a26 16%, transparent);
+  --shadow-lg: 0 12px 32px color-mix(in srgb, #121a26 22%, transparent);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }

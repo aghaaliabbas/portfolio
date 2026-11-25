@@ -3,7 +3,7 @@
   overflow: hidden;
   margin-top: var(--space-6);
   color: var(--color-bg);
-  background: var(--color-accent);
+  background: var(--color-primary-800);
 }
 
 .inner {

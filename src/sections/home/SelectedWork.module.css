@@ -21,14 +21,14 @@
   padding: var(--space-5);
 }
 
-.terracotta {
-  color: var(--color-accent-800);
-  background: var(--color-accent-200);
+.primary {
+  color: var(--color-primary-800);
+  background: var(--color-primary-200);
 }
 
-.sage {
-  color: var(--color-accent-2-800);
-  background: var(--color-accent-2-200);
+.brass {
+  color: var(--color-brass-800);
+  background: var(--color-brass-200);
 }
 
 .kicker {
@@ -61,7 +61,7 @@
   padding-top: var(--space-2);
   font-family: var(--font-heading);
   font-size: 0.95rem;
-  color: var(--color-accent-700);
+  color: var(--color-primary-700);
 }
 
 .tags {

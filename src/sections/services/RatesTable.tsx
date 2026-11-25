@@ -4,7 +4,7 @@ import styles from "./Services.module.css";
 
 export function RatesTable() {
   return (
-    <Section id="rates" eyebrow="Rates" eyebrowTone="sage">
+    <Section id="rates" eyebrow="Rates" eyebrowTone="brass">
       <Reveal>
         <Card tone="outline" className={styles.tableCard}>
           <table className={styles.table}>

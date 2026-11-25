@@ -30,9 +30,9 @@ export const services: Service[] = [
 ];
 
 export const rates: RateRow[] = [
-  { engagement: "AI / Agentic AI work", rate: "$50–75 / hr", notes: "Agents, RAG, LLM features and evals" },
-  { engagement: "Full-stack build", rate: "$40–60 / hr", notes: "React, Next.js, Node, AWS serverless" },
-  { engagement: "Monthly retainer", rate: "$3,000–5,000", notes: "Ongoing capacity, three months or longer" },
+  { engagement: "AI / Agentic AI work", rate: "$20–25 / hr", notes: "Agents, RAG, LLM features and evals" },
+  { engagement: "Full-stack build", rate: "$15–20 / hr", notes: "React, Next.js, Node, AWS serverless" },
+  { engagement: "Monthly retainer", rate: "$1500-2000", notes: "Ongoing capacity, three months or longer" },
   { engagement: "Discovery call", rate: "Free", notes: "Fifteen minutes to scope the problem" },
 ];
 

@@ -6,3 +6,4 @@ export { Button } from "./Button";
 export { Reveal } from "./Reveal";
 export { SocialIcon } from "./SocialIcon";
 export { SoftCircle } from "./SoftCircle";
+export { Portrait } from "./Portrait";

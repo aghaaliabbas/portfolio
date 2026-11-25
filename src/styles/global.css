@@ -61,7 +61,7 @@ svg {
 }
 
 ::selection {
-  background: color-mix(in srgb, var(--color-accent) 30%, transparent);
+  background: color-mix(in srgb, var(--color-brass) 30%, transparent);
 }
 
 :focus-visible {

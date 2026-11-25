@@ -39,12 +39,12 @@
 }
 
 .link:hover {
-  color: var(--color-accent-700);
+  color: var(--color-primary-700);
 }
 
 /* Colour plus an underline, so the current page isn't signalled by colour alone */
 .active {
-  color: var(--color-accent-700);
+  color: var(--color-primary-700);
   text-decoration: underline;
 }
 

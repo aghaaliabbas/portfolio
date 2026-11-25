@@ -2,7 +2,7 @@ import { CalendarDays, Mail, Phone } from "lucide-react";
 import { Button, SocialIcon } from "@/components/ui";
 import { profile } from "@/data";
 
-/** Contact pills for the terracotta band. All use the light variant so small text stays AA-contrast. */
+/** Contact pills for the navy band. All use the light variant so small text stays AA-contrast. */
 export function ContactLinks({ phone = true }: { phone?: boolean }) {
   const linkedin = profile.socials.find((s) => s.id === "linkedin");
   const upwork = profile.socials.find((s) => s.id === "upwork");

@@ -14,7 +14,7 @@ export function CaseCard({ study }: { study: CaseStudy }) {
   const Icon = icons[study.icon];
   return (
     <Card as="article" tone="outline" flush interactive className={styles.card}>
-      <div className={`${styles.banner} ${study.tone === "sage" ? styles.sage : styles.terracotta}`}>
+      <div className={`${styles.banner} ${study.tone === "brass" ? styles.brass : styles.primary}`}>
         <Icon size={40} strokeWidth={1.5} aria-hidden="true" />
         <span className={styles.kicker}>{study.kicker}</span>
       </div>

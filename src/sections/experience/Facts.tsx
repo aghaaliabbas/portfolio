@@ -24,7 +24,7 @@ export function Facts() {
           <li>
             <Reveal delay={0.07} className={styles.cell}>
               <Card className={styles.card}>
-                <Badge variant="sage">Freelance record</Badge>
+                <Badge variant="brass">Freelance record</Badge>
                 <h3 className={styles.title}>{upwork.status} on Upwork</h3>
                 <p className={styles.body}>
                   {upwork.jobSuccess} job success · {upwork.rating} rating over {upwork.completedJobs} jobs · {upwork.hours} hours billed

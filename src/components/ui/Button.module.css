@@ -29,11 +29,11 @@
 }
 
 .primary:hover {
-  background: var(--color-accent-700);
+  background: var(--color-primary-800);
 }
 
 .primary:active {
-  background: var(--color-accent-800);
+  background: var(--color-primary-900);
 }
 
 .ghost {
@@ -48,9 +48,9 @@
   background: color-mix(in srgb, var(--color-text) 14%, transparent);
 }
 
-/* For use on the terracotta contact band */
+/* For use on the navy contact band */
 .light {
-  color: var(--color-accent-800);
+  color: var(--color-primary-800);
   background: var(--color-bg);
   border-color: var(--color-bg);
 }

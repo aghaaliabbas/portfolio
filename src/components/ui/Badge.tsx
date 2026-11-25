@@ -3,7 +3,7 @@ import styles from "./Badge.module.css";
 
 interface BadgeProps {
   children: ReactNode;
-  variant?: "default" | "accent" | "sage" | "outline";
+  variant?: "default" | "accent" | "brass" | "outline";
   /** Larger size for section kickers */
   kicker?: boolean;
 }

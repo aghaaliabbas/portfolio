@@ -2,7 +2,7 @@
 
 Personal portfolio for a Senior AI & Full-Stack Engineer. Live at **https://aghaaliabbas.github.io/portfolio/**
 
-Built with **React 19 · TypeScript · Vite · React Router · Framer Motion**, styled in the **Organic** design system (warm cream ground, terracotta and sage accents, Caprasimo + Figtree type). All content is hardcoded in typed data modules, so there is no backend and no API keys.
+Built with **React 19 · TypeScript · Vite · React Router · Framer Motion**, styled in a **Navy & Brass** variant of the Organic design system (warm stone ground, deep navy primary, muted brass accents, Caprasimo + Figtree type). All content is hardcoded in typed data modules, so there is no backend and no API keys.
 
 ## Getting started
 
@@ -64,9 +64,10 @@ Edit the files in `src/data/`; the types in `src/types/index.ts` flag anything m
 
 ## Design
 
-Tokens (colors, type, radii, shadows) live in `src/styles/tokens.css` and come from the design handoff. Component styles use CSS Modules.
+Tokens (colors, type, radii, shadows) live in `src/styles/tokens.css`; component styles use CSS Modules. The layout, shapes and type come from the Organic design handoff, with the palette retuned to a more corporate navy and brass.
 
-- **Contrast:** the handoff's primary button colour (`#c67139`) only reaches 3.6:1 with white text, so buttons use the deeper `--color-action` (`#a85a28`, 5.05:1). Small text on the terracotta band sits on cream pills.
+- **Palette:** `--color-primary` (deep navy) for buttons, links and the contact band; `--color-brass` for small highlights; warm stone `--color-bg` and `--color-surface`. Each has a 100–900 ramp. To re-theme the whole site, edit only this file.
+- **Contrast:** every text pair is checked to WCAG AA (the weakest is 4.75:1). Small text on the navy band sits on cream pills.
 - **Type:** Caprasimo ships one weight; headings are forced to `font-weight: 400` to avoid a synthesized faux-bold.
 - **Motion:** entrance animations and the smooth scroll respect `prefers-reduced-motion`.
 
