@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-657e737b-1a0d-40da-ab59-14b10e0cf944/styles.css">
+<script src="_ds/organic-657e737b-1a0d-40da-ab59-14b10e0cf944/_ds_bundle.js"></script>
+<style>
+  body { margin: 0; text-wrap: pretty; }
+</style>
+</helmet>
+
+<nav class="nav" style="padding: 18px clamp(20px, 5vw, 72px); position: sticky; top: 0; background: var(--color-bg); z-index: 5;">
+  <a href="Portfolio.dc.html" class="nav-brand" style="margin-right: auto; text-decoration: none;">Agha Ali Abbas</a>
+  <a href="Portfolio.dc.html#work">Work</a>
+  <a href="Experience.dc.html">Experience</a>
+  <a href="Services.dc.html" aria-current="page">Services</a>
+  <a href="mailto:aghaali.abbas@outlook.com" class="btn btn-primary">Book a 15-min call</a>
+</nav>
+
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+
+  <section style="padding: 60px 0 48px; position: relative;">
+    <div style="position: absolute; top: 10px; right: 10px; width: 180px; height: 180px; border-radius: 50%; background: var(--color-accent-2-200); z-index: -1;"></div>
+    <span class="tag tag-accent" style="font-size: 12px; padding: 6px 16px;">Services and rates</span>
+    <h1 style="font-size: clamp(34px, 4.4vw, 58px); margin: 24px 0 0; max-width: 18ch;">One engineer, or twelve. Same standard either way.</h1>
+    <p style="font-size: 17px; line-height: 1.6; max-width: 58ch; margin: 22px 0 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Long-term remote contracts preferred, full-time remote considered. I take the build myself, or bring in the consultancy team when the scope needs more hands.</p>
+  </section>
+
+  <section style="padding: 8px 0 48px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+    <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+      <article class="card elev-sm" style="background: var(--color-surface);">
+        <p style="font-family: var(--font-heading); font-size: 14px; color: var(--color-accent-700); margin: 0 0 10px;">{{ s.num }}</p>
+        <h2 style="font-family: var(--font-heading); font-size: 21px; line-height: 1.2; margin: 0 0 10px;">{{ s.title }}</h2>
+        <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">{{ s.body }}</p>
+      </article>
+    </sc-for>
+  </section>
+
+  <section style="padding: 8px 0 56px;">
+    <span class="tag tag-accent-2" style="font-size: 12px; padding: 6px 16px;">Rates</span>
+    <div class="card elev-sm" style="background: var(--color-bg); border: 1px solid var(--color-divider); margin-top: 24px; padding: 8px; max-width: 800px;">
+      <table class="table">
+        <thead>
+          <tr><th>Engagement</th><th>Rate</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="font-family: var(--font-heading);">AI / Agentic AI work</td>
+            <td style="white-space: nowrap;">$50–75 / hr</td>
+            <td>Agents, RAG, LLM features and evals</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading);">Full-stack build</td>
+            <td style="white-space: nowrap;">$40–60 / hr</td>
+            <td>React, Next.js, Node, AWS serverless</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading);">Monthly retainer</td>
+            <td style="white-space: nowrap;">$3,000–5,000</td>
+            <td>Ongoing capacity, three months or longer</td>
+          </tr>
+          <tr>
+            <td style="font-family: var(--font-heading);">Team engagement</td>
+            <td style="white-space: nowrap;">On request</td>
+            <td>Up to twelve developers, scoped per project</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size: 14px; line-height: 1.6; margin: 16px 0 0; max-width: 52ch; color: color-mix(in srgb, var(--color-text) 70%, transparent);">Minimum contract one month; three months or longer preferred. Invoiced via Upwork, Deel, Payoneer or wire.</p>
+  </section>
+
+  <section style="padding: 8px 0 64px;">
+    <span class="tag tag-accent" style="font-size: 12px; padding: 6px 16px;">How it starts</span>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 24px;">
+      <sc-for list="{{ steps }}" as="st" hint-placeholder-count="3">
+        <div class="card elev-sm" style="background: var(--color-surface);">
+          <p style="font-family: var(--font-heading); font-size: 14px; color: var(--color-accent-700); margin: 0 0 10px;">{{ st.num }}</p>
+          <h4 style="font-family: var(--font-heading); font-size: 17px; margin: 0 0 8px;">{{ st.title }}</h4>
+          <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">{{ st.body }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+</div>
+
+<section style="background: var(--color-accent); color: var(--color-bg); position: relative; overflow: hidden;">
+  <div style="position: absolute; bottom: -60px; left: -40px; width: 240px; height: 240px; border-radius: 50%; background: color-mix(in srgb, var(--color-bg) 12%, transparent);"></div>
+  <div style="max-width: 1160px; margin: 0 auto; padding: 76px clamp(20px, 5vw, 72px); position: relative;">
+    <h3 style="font-size: clamp(28px, 3.6vw, 48px); margin: 0;">Start with the call.</h3>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px;">
+      <a href="mailto:aghaali.abbas@outlook.com" class="btn btn-secondary" style="background: var(--color-bg); color: var(--color-accent-800); border-color: var(--color-bg);">aghaali.abbas@outlook.com</a>
+      <a href="https://linkedin.com/in/agha-ali-abbas" class="btn btn-ghost" style="color: var(--color-bg);">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      services: [
+        { num: "01", title: "AI and agentic systems", body: "Agents that plan and act, RAG over your own documents, evaluation harnesses so quality is measurable. OpenAI and Claude APIs, LangChain and LangGraph, pgvector and Pinecone." },
+        { num: "02", title: "Full-stack product build", body: "React and Next.js front ends on Node and TypeScript services, PostgreSQL with Prisma, AWS serverless underneath. Tested with Jest, Cypress and Playwright before it goes near a user." },
+        { num: "03", title: "React Native apps", body: "iOS and Android from first commit to store release — push notifications, deep linking, real-time sync, and the performance work that keeps sessions crash-free." },
+        { num: "04", title: "Vibe-code audits", body: "AI-generated codebases reviewed for the things generation misses: security holes, missing tests, state that leaks, and the architecture decisions that cost you next quarter." }
+      ],
+      steps: [
+        { num: "01", title: "Fifteen-minute call", body: "You describe the problem. I say whether I'm the right person for it, plainly." },
+        { num: "02", title: "Scope and estimate", body: "A written scope with milestones, risks and a rate — usually within two days." },
+        { num: "03", title: "First week ships", body: "Working software in the first week, then a weekly cadence you can plan around." }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

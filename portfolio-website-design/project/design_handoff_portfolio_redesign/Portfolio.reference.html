@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/organic-657e737b-1a0d-40da-ab59-14b10e0cf944/styles.css">
+<script src="_ds/organic-657e737b-1a0d-40da-ab59-14b10e0cf944/_ds_bundle.js"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; text-wrap: pretty; }
+</style>
+</helmet>
+
+<nav class="nav" style="padding: 18px clamp(20px, 5vw, 72px); position: sticky; top: 0; background: var(--color-bg); z-index: 5;">
+  <span class="nav-brand" style="margin-right: auto;">Agha Ali Abbas</span>
+  <a href="#work">Work</a>
+  <a href="Experience.dc.html">Experience</a>
+  <a href="Services.dc.html">Services</a>
+  <a href="mailto:aghaali.abbas@outlook.com" class="btn btn-primary">Book a 15-min call</a>
+</nav>
+
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+
+  <section style="padding: 76px 0 64px; position: relative;">
+    <div style="position: absolute; top: 20px; right: 0; width: 220px; height: 220px; border-radius: 50%; background: var(--color-accent-2-200); z-index: -1;"></div>
+    <span class="tag tag-accent" style="font-size: 12px; padding: 6px 16px;">AI / Agentic engineer · Lahore, Pakistan · Remote</span>
+    <h1 style="font-size: clamp(38px, 5.6vw, 72px); margin: 24px 0 0; max-width: 16ch;">I build AI agents that do real production work.</h1>
+    <p style="font-size: 18px; line-height: 1.6; max-width: 56ch; margin: 24px 0 0; color: color-mix(in srgb, var(--color-text) 82%, transparent);">Nine years of full-stack engineering — React, Next.js, Node, AWS serverless — now pointed at agentic systems: RAG pipelines, multi-agent workflows, and LLM features that ship behind real SLAs. Enterprise work for IBM, product work for Drivelah and Cohere, and a 12-person team behind me when the scope grows.</p>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 30px;">
+      <a href="#work" class="btn btn-primary">See selected work</a>
+      <a href="Experience.dc.html" class="btn btn-secondary">Full experience</a>
+    </div>
+  </section>
+
+  <section style="padding: 12px 0 64px;" aria-label="Track record">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+        <div class="card elev-sm" style="background: var(--color-surface);">
+          <p style="font-family: var(--font-heading); font-size: clamp(30px, 3vw, 42px); color: var(--color-accent); margin: 0;">{{ s.num }}</p>
+          <p class="card-body" style="opacity: 1; font-size: 13.5px; margin: 6px 0 0; color: color-mix(in srgb, var(--color-text) 75%, transparent);">{{ s.label }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="work" style="padding: 20px 0 56px;">
+    <span class="tag tag-accent-2" style="font-size: 12px; padding: 6px 16px;">Selected work</span>
+    <h2 style="font-size: clamp(28px, 3.2vw, 40px); margin: 20px 0 12px; max-width: 20ch;">Four builds, four different problems.</h2>
+    <p style="font-size: 15.5px; line-height: 1.6; max-width: 52ch; margin: 0 0 36px; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Case studies are being written up — the placeholders below mark where the screens and numbers go.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+      <sc-for list="{{ cases }}" as="c" hint-placeholder-count="4">
+        <article class="card elev-sm" style="background: var(--color-bg); border: 1px solid var(--color-divider); padding: 0; overflow: hidden;">
+          <div class="washed" style="width: 100%; aspect-ratio: 16 / 10; background-image: repeating-linear-gradient(135deg, var(--color-neutral-300) 0 8px, var(--color-neutral-200) 8px 16px); display: flex; align-items: flex-end; padding: 12px;">
+            <span style="font-family: ui-monospace, Menlo, monospace; font-size: 11px; letter-spacing: 0.04em; background: var(--color-bg); padding: 4px 10px; border-radius: 999px;">{{ c.slot }}</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px; padding: 22px;">
+            <p style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0;">{{ c.kicker }}</p>
+            <h3 style="font-family: var(--font-heading); font-size: 21px; line-height: 1.2; margin: 0;">{{ c.title }}</h3>
+            <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">{{ c.body }}</p>
+            <p style="font-family: var(--font-heading); font-size: 14px; color: var(--color-accent-700); margin: 4px 0 0;">{{ c.result }}</p>
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px;">
+              <sc-for list="{{ c.stack }}" as="t" hint-placeholder-count="3">
+                <span class="tag tag-neutral">{{ t }}</span>
+              </sc-for>
+            </div>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+  </section>
+
+  <section style="padding: 20px 0 64px;">
+    <span class="tag tag-accent" style="font-size: 12px; padding: 6px 16px;">Where I've done it</span>
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px clamp(24px, 5vw, 96px); align-items: start; margin-top: 24px;">
+      <div>
+        <h2 style="font-size: clamp(24px, 2.4vw, 32px); margin: 0 0 16px; max-width: 18ch;">Enterprise rigour, startup pace.</h2>
+        <p style="font-size: 15.5px; line-height: 1.65; margin: 0; max-width: 46ch; color: color-mix(in srgb, var(--color-text) 78%, transparent);">IBM taught me testing discipline — 99% crash-free sessions, Jest and Cypress on everything. Drivelah and Cohere taught me to move: serverless cost cuts, real-time sync, and a team that grew from two people to twelve. Both habits come with me.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px;">
+        <sc-for list="{{ roles }}" as="r" hint-placeholder-count="5">
+          <div class="card" style="background: var(--color-surface); flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;">
+            <div>
+              <p style="font-family: var(--font-heading); font-size: 16px; margin: 0;">{{ r.company }}</p>
+              <p style="font-size: 13px; margin: 4px 0 0; color: color-mix(in srgb, var(--color-text) 70%, transparent);">{{ r.role }}</p>
+            </div>
+            <span style="font-size: 12.5px; white-space: nowrap; color: color-mix(in srgb, var(--color-text) 60%, transparent);">{{ r.years }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ showRates }}" hint-placeholder-val="{{ true }}">
+    <section style="padding: 0 0 64px;">
+      <span class="tag tag-accent-2" style="font-size: 12px; padding: 6px 16px;">Engagement</span>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 24px;">
+        <div class="card elev-sm" style="background: var(--color-surface);">
+          <h4 style="font-family: var(--font-heading); font-size: 19px; margin: 0 0 8px;">$40–75 / hour</h4>
+          <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Long-term remote contract, or $3,000–5,000 monthly retainer.</p>
+        </div>
+        <div class="card elev-sm" style="background: var(--color-surface);">
+          <h4 style="font-family: var(--font-heading); font-size: 19px; margin: 0 0 8px;">Available now</h4>
+          <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Immediate start, three months or longer preferred. Remote, any timezone overlap.</p>
+        </div>
+        <div class="card elev-sm" style="background: var(--color-surface);">
+          <h4 style="font-family: var(--font-heading); font-size: 19px; margin: 0 0 8px;">Solo or with the team</h4>
+          <p style="font-size: 14.5px; line-height: 1.55; margin: 0; color: color-mix(in srgb, var(--color-text) 78%, transparent);">Twelve developers on call for larger scopes — web, mobile, AI integration, code audits.</p>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+</div>
+
+<section id="contact" style="background: var(--color-accent); color: var(--color-bg); position: relative; overflow: hidden;">
+  <div style="position: absolute; bottom: -60px; left: -60px; width: 260px; height: 260px; border-radius: 50%; background: color-mix(in srgb, var(--color-bg) 12%, transparent);"></div>
+  <div style="max-width: 1160px; margin: 0 auto; padding: 76px clamp(20px, 5vw, 72px); position: relative;">
+    <h3 style="font-size: clamp(30px, 3.8vw, 50px); margin: 0; max-width: 18ch;">Tell me the problem. First fifteen minutes are free.</h3>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 36px;">
+      <a href="mailto:aghaali.abbas@outlook.com" class="btn btn-secondary" style="background: var(--color-bg); color: var(--color-accent-800); border-color: var(--color-bg);">aghaali.abbas@outlook.com</a>
+      <a href="https://linkedin.com/in/agha-ali-abbas" class="btn btn-ghost" style="color: var(--color-bg);">LinkedIn</a>
+      <a href="tel:+923334490134" class="btn btn-ghost" style="color: var(--color-bg);">+92 333 4490134</a>
+    </div>
+  </div>
+</section>
+
+<div style="max-width: 1160px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px);">
+  <footer style="padding: 32px 0; font-size: 13px; display: flex; gap: 24px; flex-wrap: wrap; color: color-mix(in srgb, var(--color-text) 70%, transparent);">
+    <span>Agha Ali Abbas — Senior Full-Stack &amp; AI Engineer</span>
+    <span style="margin-left: auto;">Lahore, Pakistan · Remote worldwide</span>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showRates&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      showRates: this.props.showRates ?? true,
+      stats: [
+        { num: "9+", label: "Years shipping production software" },
+        { num: "100%", label: "Upwork job success, 21 jobs, 5.0 rating" },
+        { num: "1,000+", label: "Hours billed on Upwork as Top Rated" },
+        { num: "12", label: "Developers on the team I lead" }
+      ],
+      cases: [
+        { slot: "case study screen — dashboard", kicker: "Agentic AI", title: "Multi-agent research desk", body: "Placeholder: an agent workflow that plans, retrieves and writes, with a human approval step before anything ships.", result: "Result metric goes here", stack: ["LangGraph", "Claude API", "pgvector"] },
+        { slot: "case study screen — chat UI", kicker: "RAG", title: "Answers from 40k internal docs", body: "Placeholder: retrieval over a messy document estate, with citations and an eval harness to keep quality honest.", result: "Result metric goes here", stack: ["Next.js 14", "Supabase", "OpenAI"] },
+        { slot: "case study screen — mobile app", kicker: "Mobile", title: "Marketplace app, rebuilt", body: "Placeholder: React Native rewrite with real-time sync and analytics-driven debugging on live client issues.", result: "99% crash-free sessions", stack: ["React Native", "Firebase", "Amplitude"] },
+        { slot: "case study screen — architecture", kicker: "Platform", title: "Serverless cost teardown", body: "Placeholder: monolith moved onto Lambda with Prisma-tuned Postgres and a CI/CD pipeline that deploys itself.", result: "30% infrastructure cost cut", stack: ["AWS Lambda", "Prisma", "GitHub Actions"] }
+      ],
+      roles: [
+        { company: "Cohere", role: "Senior Full-Stack Developer", years: "2024 — now" },
+        { company: "Drivelah", role: "Senior Full-Stack Developer", years: "2021 — 2023" },
+        { company: "IBM CCI", role: "Mobile Applications Developer", years: "2020 — 2021" },
+        { company: "Buybit", role: "Full-Stack Developer", years: "2019 — 2020" },
+        { company: "Codingpixel", role: "Full-Stack MEAN Developer", years: "2016 — 2019" }
+      ]
+    };
+  }
+}
+
+</script>
+</body>
+</html>

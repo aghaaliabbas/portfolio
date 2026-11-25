@@ -1,0 +1,69 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 0.6rem 1.4rem;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: var(--color-text);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.25s var(--ease),
+    box-shadow 0.25s var(--ease);
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  color: #fff;
+  background: var(--color-action);
+}
+
+.primary:hover {
+  background: var(--color-accent-700);
+}
+
+.primary:active {
+  background: var(--color-accent-800);
+}
+
+.ghost {
+  border-color: var(--color-divider);
+}
+
+.ghost:hover {
+  background: color-mix(in srgb, var(--color-text) 7%, transparent);
+}
+
+.ghost:active {
+  background: color-mix(in srgb, var(--color-text) 14%, transparent);
+}
+
+/* For use on the terracotta contact band */
+.light {
+  color: var(--color-accent-800);
+  background: var(--color-bg);
+  border-color: var(--color-bg);
+}
+
+.light:hover {
+  background: #fff;
+}
+
+.onAccent {
+  color: var(--color-bg);
+  border-color: color-mix(in srgb, var(--color-bg) 55%, transparent);
+}
+
+.onAccent:hover {
+  background: color-mix(in srgb, var(--color-bg) 14%, transparent);
+}

@@ -1,0 +1,31 @@
+.strip {
+  padding-bottom: var(--space-7);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--space-5);
+}
+
+.cell {
+  height: 100%;
+}
+
+.card {
+  height: 100%;
+}
+
+/* Large display text on the tan card: accent-600 clears the 3:1 large-text minimum (brand terracotta is 2.7:1 here) */
+.value {
+  font-family: var(--font-heading);
+  font-size: clamp(1.9rem, 1.4rem + 1.6vw, 2.6rem);
+  line-height: 1.1;
+  color: var(--color-accent-600);
+}
+
+.label {
+  margin-top: var(--space-2);
+  font-size: var(--fs-sm);
+  color: var(--text-body);
+}

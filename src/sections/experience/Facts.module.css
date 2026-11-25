@@ -1,0 +1,32 @@
+.section {
+  padding-block: var(--space-4) var(--space-7);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: var(--space-5);
+}
+
+.cell,
+.card {
+  height: 100%;
+}
+
+.card {
+  align-items: flex-start;
+}
+
+.title {
+  margin-top: var(--space-3);
+  font-size: 1.2rem;
+}
+
+.body {
+  margin-top: var(--space-2);
+  color: var(--text-body);
+}
+
+.link {
+  margin-top: auto;
+}
