@@ -1,0 +1,10 @@
+export { profile, upwork } from "./profile";
+export { experience } from "./experience";
+export { skillGroups } from "./skills";
+export { education } from "./education";
+export { projects } from "./projects";
+export { navLinks } from "./navigation";
+export type { NavLinkItem } from "./navigation";
+export { homeHero, homeStats, caseStudies, roleHabits, engagementCards } from "./home";
+export { experienceHero, factCards } from "./experiencePage";
+export { servicesHero, services, rates, ratesNote, steps } from "./services";

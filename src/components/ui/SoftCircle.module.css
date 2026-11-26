@@ -1,0 +1,15 @@
+.circle {
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.brass {
+  background: var(--color-brass-200);
+}
+
+.cream {
+  z-index: 0;
+  background: color-mix(in srgb, var(--color-bg) 12%, transparent);
+}

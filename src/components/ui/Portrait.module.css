@@ -1,0 +1,24 @@
+.portrait {
+  position: relative;
+  width: var(--portrait-size, 300px);
+  margin: 0;
+}
+
+.frame {
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--color-surface);
+  /* A stone ring separates the photo from the brass circle behind it */
+  box-shadow:
+    0 0 0 6px var(--color-bg),
+    var(--shadow-lg);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Keeps the face centred in the circle */
+  object-position: 50% 24%;
+}

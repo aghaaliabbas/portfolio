@@ -1,0 +1,101 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--color-bg);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.25s var(--ease);
+}
+
+.raised {
+  border-bottom-color: var(--color-divider);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: var(--nav-height);
+}
+
+.brand {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.link {
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  padding-block: var(--space-2);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary-700);
+}
+
+/* Colour plus an underline, so the current page isn't signalled by colour alone */
+.active {
+  color: var(--color-primary-700);
+  text-decoration: underline;
+}
+
+.toggle {
+  display: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-right: -10px;
+  color: var(--color-text);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .toggle {
+    display: grid;
+  }
+
+  .nav {
+    position: absolute;
+    inset: 100% 0 auto 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-1);
+    padding: var(--space-3) var(--gutter) var(--space-5);
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-divider);
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition:
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease),
+      visibility 0.25s;
+  }
+
+  .nav.open {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .link {
+    padding: var(--space-3) 0;
+    font-size: var(--fs-md);
+  }
+
+  .cta {
+    margin-top: var(--space-3);
+  }
+}

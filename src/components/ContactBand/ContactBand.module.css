@@ -1,0 +1,25 @@
+.band {
+  position: relative;
+  overflow: hidden;
+  margin-top: var(--space-6);
+  color: var(--color-bg);
+  background: var(--color-primary-800);
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-8);
+}
+
+.heading {
+  max-width: 18ch;
+  font-size: clamp(1.9rem, 1.2rem + 2.8vw, 3.1rem);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
