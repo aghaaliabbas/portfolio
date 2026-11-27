@@ -31,7 +31,7 @@ export const caseStudies: CaseStudy[] = [
     title: "Hospital portal and portal monitoring",
     body: "For Ireland-based health insurer Vhi: the hospital portal in React and Node.js, plus Datadog monitoring that kept internal portals healthy, in a regulated EU environment.",
     result: "Datadog monitoring across Vhi's internal portals",
-    tags: ["React", "Node.js", "Datadog"],
+    tags: ["React", "Node.js", "Datadog", "Kafka"],
     tone: "brass",
     icon: "heart-pulse",
   },
@@ -64,7 +64,7 @@ export const roleHabits = {
 };
 
 export const engagementCards: InfoCard[] = [
-  { title: "$40–75 / hour", body: "Long-term remote contract, or a $3,000–5,000 monthly retainer." },
+  { title: "$20–25 / hour", body: "Long-term remote contract, or a $1,500–2,000 monthly retainer." },
   { title: "Available now", body: "Immediate start, three months or longer preferred. Remote." },
   { title: "Embedded or end-to-end", body: "Work inside your team, or own a feature from scoping to production — web, mobile and AI integration." },
 ];

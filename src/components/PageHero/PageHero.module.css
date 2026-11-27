@@ -32,3 +32,28 @@
   gap: var(--space-3);
   margin-top: var(--space-5);
 }
+
+/* Same sizes as the Home hero so the photo looks identical across pages */
+.withPhoto {
+  --portrait-size: clamp(240px, 26vw, 330px);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--portrait-size);
+  align-items: center;
+  gap: var(--space-6) clamp(32px, 5vw, 80px);
+}
+
+.photo {
+  justify-self: end;
+}
+
+@media (max-width: 900px) {
+  .withPhoto {
+    --portrait-size: 220px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .photo {
+    justify-self: start;
+    margin-left: var(--space-4);
+  }
+}

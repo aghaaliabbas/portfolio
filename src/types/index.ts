@@ -80,7 +80,7 @@ export interface CaseStudy {
   result: string;
   tags: string[];
   tone: "primary" | "brass";
-  icon: "bot" | "heart-pulse" | "smartphone" | "coins";
+  icon: "bot" | "heart-pulse" | "smartphone" | "coins" | "file-search" | "calendar-check";
 }
 
 export interface InfoCard {

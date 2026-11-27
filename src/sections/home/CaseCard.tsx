@@ -1,4 +1,4 @@
-import { Bot, Coins, HeartPulse, Smartphone } from "lucide-react";
+import { Bot, CalendarCheck, Coins, FileSearch, HeartPulse, Smartphone } from "lucide-react";
 import { Badge, Card } from "@/components/ui";
 import type { CaseStudy } from "@/types";
 import styles from "./SelectedWork.module.css";
@@ -8,6 +8,8 @@ const icons = {
   "heart-pulse": HeartPulse,
   smartphone: Smartphone,
   coins: Coins,
+  "file-search": FileSearch,
+  "calendar-check": CalendarCheck,
 } as const;
 
 export function CaseCard({ study }: { study: CaseStudy }) {

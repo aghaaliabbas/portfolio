@@ -1,5 +1,5 @@
 import { ContactBand, ContactLinks } from "@/components/ContactBand";
-import { Engagement, HomeHero, RoleHistory, SelectedWork, StatStrip } from "@/sections/home";
+import { Engagement, HomeHero, OwnProjects, RoleHistory, SelectedWork, StatStrip } from "@/sections/home";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
 export default function Home() {
@@ -9,9 +9,10 @@ export default function Home() {
       <HomeHero />
       <StatStrip />
       <SelectedWork />
+      <OwnProjects />
       <RoleHistory />
       <Engagement />
-      <ContactBand id="contact" heading="Tell me the problem. First fifteen minutes are free.">
+      <ContactBand id="contact" heading="Tell me the problem. Consultation is absolutely free.">
         <ContactLinks />
       </ContactBand>
     </>

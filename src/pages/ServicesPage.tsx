@@ -1,6 +1,6 @@
 import { ContactBand, ContactLinks } from "@/components/ContactBand";
 import { PageHero } from "@/components/PageHero";
-import { servicesHero } from "@/data";
+import { portrait, servicesHero } from "@/data";
 import { HowItStarts, RatesTable, ServiceList } from "@/sections/services";
 import { usePageTitle } from "@/hooks/usePageTitle";
 
@@ -8,7 +8,7 @@ export default function ServicesPage() {
   usePageTitle("Services and rates");
   return (
     <>
-      <PageHero {...servicesHero} />
+      <PageHero {...servicesHero} photo={portrait} />
       <ServiceList />
       <RatesTable />
       <HowItStarts />

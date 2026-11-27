@@ -8,3 +8,5 @@ export type { NavLinkItem } from "./navigation";
 export { homeHero, homeStats, caseStudies, roleHabits, engagementCards } from "./home";
 export { experienceHero, factCards } from "./experiencePage";
 export { servicesHero, services, rates, ratesNote, steps } from "./services";
+export { portrait } from "./portrait";
+export { ownProjects } from "./ownProjects";

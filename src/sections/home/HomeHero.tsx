@@ -1,6 +1,5 @@
-import portrait from "@/assets/portrait.jpg";
 import { Badge, Button, Container, Portrait, Reveal } from "@/components/ui";
-import { homeHero, profile } from "@/data";
+import { homeHero, portrait } from "@/data";
 import styles from "./HomeHero.module.css";
 
 export function HomeHero() {
@@ -30,7 +29,7 @@ export function HomeHero() {
         </div>
 
         <Reveal delay={0.2} className={styles.photo}>
-          <Portrait src={portrait} alt={`Portrait of ${profile.name}`} />
+          <Portrait {...portrait} />
         </Reveal>
       </Container>
     </section>
